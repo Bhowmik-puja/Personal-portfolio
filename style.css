@@ -10,7 +10,7 @@ body {
 }
 .navbar {
   margin-top: 20px;
-  margin-bottom: 50px;
+  /* margin-bottom: 30px; */
 }
 .navbar a {
   float: left;
@@ -27,7 +27,7 @@ body {
   text-align: center;
 }
 .name-part h1 {
-  font-size: 35pt;
+  font-size: 32pt;
 }
 .name-part h4 {
   font-size: 30pt;
@@ -39,13 +39,6 @@ body {
   height: 400px;
   width: 400px;
 }
-/* @media(max-width:600px){
-    .container{
-        width: 100%;
-        float: none;
-        
-    }
-} */
 .view-cv {
   background: transparent;
   border: 3px solid #25bfe1;
@@ -81,6 +74,7 @@ body {
 .form-group input,textarea{
   width: 80%;
   padding: 10px;
+  border-color: black;
   border-radius: 5px;
 }
 .submit-button{
@@ -95,4 +89,40 @@ body {
   padding: 40px;
   margin-top: 100px;
   font-size: 15pt;
+}
+.half-width{
+  width: 40%;
+  float: left;
+  margin: 10px;
+}
+.half-width p{
+  line-height: 2rem;
+}
+.half-width img{
+  max-width: 100%;
+  height: auto;
+  /* width: 300px;
+  height: 300px; */
+  border-radius: 10%;
+}
+table{
+  max-width: 100%;
+}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+.fav-link a{
+ text-decoration: none;
+}
+@media(max-width:960px){
+  .half-width {
+      width: 100%;
+      float: none;
+      
+  }
 }
